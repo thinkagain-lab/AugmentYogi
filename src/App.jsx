@@ -24,6 +24,7 @@ function App() {
     <ARFeature/>
     <Newsletter/>
     <Footer/>
+    {/* Hello world */}
     </>
   )
 }
