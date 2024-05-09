@@ -5,7 +5,7 @@ function GetYourProject() {
   return (
     <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue">
       <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
           How to Get Your Filter
         </h2>
 
@@ -21,7 +21,7 @@ function GetYourProject() {
                 Choose a Filter
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 text-center">
+            <p class="mb-3 font-normal text-gray-400 text-center">
               Explore the filters and choose as per your business needs
             </p>
           </div>
@@ -37,7 +37,7 @@ function GetYourProject() {
                 Fill Up The Form
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 text-center">
+            <p class="mb-3 font-normal text-gray-400 text-center">
               Explore the filters and choose as per your business needs
             </p>
           </div>
@@ -53,7 +53,7 @@ function GetYourProject() {
                 Get In Touch
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 text-center">
+            <p class="mb-3 font-normal text-gray-400 text-center">
               Explore the filters and choose as per your business needs
             </p>
           </div>

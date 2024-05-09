@@ -2,10 +2,10 @@ import React from "react";
 
 function ContactForm() {
   return (
-    <section className="relative z-10 bg-customColor-dark-blue">
+    <section className="relative z-10 bg-customColor-dark-blue" id="contactform">
       <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-8 lg:space-y-12 lg:py-24 lg:px-6">
         <div className="text-center px-6">
-          <h2 className="text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
             Get In Touch
           </h2>
           <p className="text-sm text-gray-400 mt-3">
@@ -94,8 +94,8 @@ function ContactForm() {
 
 
               <div class="flex justify-center mt-5">
-                <button className="mt-5 flex items-center relative p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-customColor-brand-blue to-customColor-brand-magenta group-hover:from-customColor-brand-blue group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-                  <span className="relative text-base px-20 py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <button className="mt-5 flex items-center relative p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium  rounded-lg group bg-gradient-to-br from-customColor-brand-blue to-customColor-brand-magenta group-hover:from-customColor-brand-blue group-hover:to-pink-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-purple-800">
+                  <span className="relative text-base px-20 py-4 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Send Message
                   </span>
                 </button>

@@ -6,7 +6,7 @@ const OurSolutions=()=> {
   const solutionsArray = [
     {
       id:1,
-      img:'/public/storeimg/faceFilter.jpg',
+      img:'storeimg/faceFilter.jpg',
       name:'Face Filter',
       description: 'AR face filters offer enjoyable methods to interact with your audience, enhancing visibility and driving sales',
       originalPrice:'₹11,999',
@@ -14,7 +14,7 @@ const OurSolutions=()=> {
     },
     {
       id:2,
-      img:'/public/storeimg/RandomisersFilter.jpg',
+      img:'storeimg/RandomisersFilter.jpg',
       name:'Randomisers Filter',
       description: 'Randomisers refer to software capable of generating random content, including text, numbers, expressions, and even facial features',
       originalPrice:'₹26,399',
@@ -22,7 +22,7 @@ const OurSolutions=()=> {
     },
     {
       id:3,
-      img:'/public/storeimg/WorldEffectFilter.jpg',
+      img:'storeimg/WorldEffectFilter.jpg',
       name:'World Effect Filter',
       description: 'World effects integrate virtual objects seamlessly into real-world environments',
       originalPrice:'₹57,599',
@@ -30,7 +30,7 @@ const OurSolutions=()=> {
     },
     {
       id:4,
-      img:'/public/storeimg/TrackersFilter.jpg',
+      img:'storeimg/TrackersFilter.jpg',
       name:'Trackers Filter',
       description: 'This filter functions as a plane, body, image, and target tracker, enabling the creation of interactive AR effects that can engage with art and iconic imagery',
       originalPrice:'₹69.599',
@@ -38,7 +38,7 @@ const OurSolutions=()=> {
     },
     {
       id:5,
-      img:'/public/storeimg/MiniGamesFilter.jpg',
+      img:'storeimg/MiniGamesFilter.jpg',
       name:'Mini-Games / Quizzes Filters',
       description: 'An engaging filter offering various games, quizzes, and fun activities for entertainment',
       originalPrice:'₹91,199',
@@ -46,7 +46,7 @@ const OurSolutions=()=> {
     },
     {
       id:6,
-      img:'/public/storeimg/PortalFilter.jpg',
+      img:'storeimg/PortalFilter.jpg',
       name:'Portal Filter',
       description: 'AR portals serve as gateways to immersive virtual worlds, accessible through doorways, windows, and portals',
       originalPrice:'₹119,999',
@@ -55,9 +55,9 @@ const OurSolutions=()=> {
   ] 
 
   return (
-    <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue relative z-10">
+    <section id="oursolutions" className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue relative z-10">
       <div className="text-center p-10">
-        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
           Our Strategic Solution and Pricing
         </h2>
       </div>

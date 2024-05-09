@@ -5,13 +5,11 @@ const SoldFilters = () => {
   const cards = [
     {
       id: 1,
-      image: `https://source.unsplash.com/random/300x200?${encodeURIComponent(
-        "Cocktail"
-      )}`,
-      title: "Cocktail",
-      description: "Tropical mix of flavors, perfect for parties.",
-      price: 8.99,
-      link: "https://lqrs.com",
+      image:'/public/ourfilter/facetatoofilter.jpeg',
+      title: "Eagles Eye",
+      description: "A Filter for Fashion Diadem",
+      logo:'/public/soldfilter/logo/EELogo.png',
+      link: "https://www.instagram.com/ar/1147775182881685",
     },
     {
       id: 2,
@@ -109,7 +107,9 @@ const SoldFilters = () => {
                       {card.description}
                     </p>
                     <div className="flex justify-between items-center mt-4">
-                      <span className="text-2xl font-extrabold text-gray-900">{` `}</span>
+                      <span className="text-2xl font-extrabold text-gray-900">
+                        {card.logo ? <img height={40} width={40} src={card.logo} /> : ''}
+                      </span>
                       <a
                         href={card.link}
                         className="text-white border border-customColor-dark-magenta hover:bg-customColor-dark-magenta focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"

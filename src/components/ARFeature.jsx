@@ -4,13 +4,13 @@ function ARFeature() {
   return (
     <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue ">
       <div className="relative z-10 max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
           How Augmented Reakity is Helping Brands
         </h2>
 
         <div
           className="h-96 rounded-md overflow-hidden bg-cover bg-center"
-          style={{ backgroundImage: "url('/public/features/feature02.jpg')" }}
+          style={{ backgroundImage: "url('features/feature02.jpg')" }}
         >
           ``
           <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
@@ -45,7 +45,7 @@ function ARFeature() {
         <div className="md:flex mt-8 md:-mx-4">
           <div className="w-full h-96 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2"
           style={{
-            backgroundImage: "url('/public/features/feature04.jpeg')",
+            backgroundImage: "url('features/feature04.jpeg')",
           }}>
             <div className="bg-customColor-dark-blue  bg-opacity-80 flex items-center h-full">
               <div className="px-10 max-w-xl ">
@@ -78,7 +78,7 @@ function ARFeature() {
           <div
             className="w-full h-96 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2"
             style={{
-              backgroundImage: "url('/public/features/feature03.jpeg')",
+              backgroundImage: "url('features/feature03.jpeg')",
             }}
           >
             <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">

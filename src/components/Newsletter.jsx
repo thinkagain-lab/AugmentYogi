@@ -5,12 +5,12 @@ const Newsletter = () => {
     <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue ">
     <div className="relative z-10 max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl rounded-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-        <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold text-white sm:text-4xl">
-          Stay Updated
+        <h2 className="mx-auto text-center text-3xl font-bold text-white sm:text-4xl">
+        Stay Ahead in the Augmented Reality Universe
         </h2>
 
-        <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-        Get latest updates and possibilities in the realm of Augmented reality
+        <p className="mx-auto mt-4 text-center text-md  text-gray-300">
+        Join AugmentYogi's AR revolution for breakthrough tech, trends, and community engagement. Subscribe now for curated updates, in-depth analysis, and connect with like-minded individuals. Follow us for more insights and embark on an exciting journey into the future of technology
         </p>
 
         <form className="mx-auto mt-10 flex max-w-md gap-x-4">
@@ -31,7 +31,7 @@ const Newsletter = () => {
             type="submit"
             className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            Notify me
+           Subscribe
           </button>
         </form>
 

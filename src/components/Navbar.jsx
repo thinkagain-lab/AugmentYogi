@@ -32,7 +32,7 @@ function Navbar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src="/public/ay_white.svg"
+            src="ay_white.svg"
             className="h-14 w-48"
             alt="AY LOGO"
           />
@@ -46,7 +46,7 @@ function Navbar() {
          
             <li>
               <a
-                href="#"
+                href="#oursolutions"
                 className="block py-2 px-3 text-white rounded md:bg-transparent"
                 aria-current="page"
               >
@@ -56,16 +56,16 @@ function Navbar() {
 
             <li>
               <a
-                href="#"
+                href="#tryoutyourself"
                 className="block py-2 px-3 text-white"
               >
-                Case Studies
+                Try Out Yourself
               </a>
             </li>
 
             <li>
               <a
-                href="#"
+                href="#contactform"
                 className="block py-2 px-3 text-white"
               >
                 Contact Us

@@ -6,8 +6,8 @@ function WhyAR() {
       <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
         {/* Row */}
         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-          <div className="text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 className="mb-4 text-xl md:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-left text-center">
+          <div className="sm:text-l text-gray-400">
+            <h2 className="mb-4 text-xl md:text-3xl font-extrabold tracking-tight text-white lg:text-left text-center">
               AR elevates Brand Recall by 70%
             </h2>
             <p className="mb-8 font-light text-sm text-center md:text-left md:text-xl">
@@ -24,7 +24,7 @@ function WhyAR() {
               <li className="flex space-x-3">
                 {/* Icon */}
                 <svg
-                  className="flex-shrink-0 w-5 h-5 text-customColor-brand-magenta dark:text-customColor-brand-magenta"
+                  className="flex-shrink-0 w-5 h-5 text-customColor-brand-magenta"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,14 +35,14 @@ function WhyAR() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-white">
                   Elevates Engagement with Stunning Visuals
                 </span>
               </li>
               <li className="flex space-x-3">
                 {/* Icon */}
                 <svg
-                  className="flex-shrink-0 w-5 h-5 text-customColor-brand-magenta dark:text-customColor-brand-magenta"
+                  className="flex-shrink-0 w-5 h-5 text-customColor-brand-magenta"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,14 +53,14 @@ function WhyAR() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-white">
                   Creative Filters and Virtual Product Trials
                 </span>
               </li>
               <li className="flex space-x-3">
                 {/* Icon */}
                 <svg
-                  className="flex-shrink-0 w-5 h-5 text-customColor-brand-magenta dark:text-customColor-brand-magenta"
+                  className="flex-shrink-0 w-5 h-5 text-customColor-brand-magenta"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ function WhyAR() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                <span className="text-base font-medium leading-tight text-white">
                   Enhancing Memory Recall by 70%
                 </span>
               </li>
@@ -79,7 +79,7 @@ function WhyAR() {
           </div>
           <img
             className="w-full mb-4 rounded-lg lg:mb-0 lg:flex"
-            src="/public/whyAR.jpeg"
+            src="whyAR.jpeg"
             alt="why AR Image"
           />
         </div>
