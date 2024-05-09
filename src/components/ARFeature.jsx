@@ -43,7 +43,10 @@ function ARFeature() {
           </div>
         </div>
         <div className="md:flex mt-8 md:-mx-4">
-          <div className="w-full h-96 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2">
+          <div className="w-full h-96 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2"
+          style={{
+            backgroundImage: "url('/public/features/feature04.jpeg')",
+          }}>
             <div className="bg-customColor-dark-blue  bg-opacity-80 flex items-center h-full">
               <div className="px-10 max-w-xl ">
                 <h2 className="text-2xl text-white font-semibold">
