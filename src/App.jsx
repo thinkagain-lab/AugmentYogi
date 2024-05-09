@@ -9,6 +9,7 @@ import ContactForm from "./components/ContactForm"
 import ARFeature from "./components/ARFeature"
 import Newsletter from "./components/Newsletter"
 import Footer from "./components/Footer"
+import SoldFilters from "./components/SoldFilters"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <OurFiltersBenToGrid/>
     <GetYourProject/>
     <OurSolutions/>
+    <SoldFilters/>
     <ContactForm/>
     <ARFeature/>
     <Newsletter/>

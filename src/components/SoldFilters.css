@@ -1,0 +1,7 @@
+#oursoldfilter
+{
+    overflow-x: scroll !important;
+}
+#oursoldfilter::-webkit-scrollbar {
+    display: none;
+  }

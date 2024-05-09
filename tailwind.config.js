@@ -12,6 +12,7 @@ export default {
           'dark-blue': '#080A1D',
           'brand-magenta': '#EF30D2',
           'brand-blue':'#2633CC',
+          'shop-blue': '#0a003b'
         },
       },
     },

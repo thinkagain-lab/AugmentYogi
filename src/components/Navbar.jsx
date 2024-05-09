@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <nav
       className={`w-full fixed z-20 transition-all ${
-        isScrolled ? "bg-gradient-to-l from-customColor-brand-magenta to-customColor-brand-blue" : "bg-transparent"
+        isScrolled ? "bg-customColor-dark-blue" : "bg-transparent"
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

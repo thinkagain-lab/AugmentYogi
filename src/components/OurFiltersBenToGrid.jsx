@@ -2,9 +2,9 @@ import React from "react";
 
 function OurFiltersBenToGrid() {
   return (
-    <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue">
-      <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-gray-900 dark:text-white">
+    <section className="bg-gradient-to-b from-customColor-dark-magenta via-customColor-dark-blue to-customColor-dark-magenta">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+        <h2 className="text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
           Some Of Our Cool Filters For Brand Enhancement
         </h2>
 
