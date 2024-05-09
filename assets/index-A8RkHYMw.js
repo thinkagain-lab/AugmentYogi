@@ -1,0 +1,2 @@
+const __vite__fileDeps=["assets/CircleDrawer-CmR4-Nzq.js","assets/index-B1HkeKCu.js","assets/index-Dc7B3l4K.css"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
+import{_ as i}from"./index-B1HkeKCu.js";async function o(a,e=!0){const{CircleDrawer:r}=await i(()=>import("./CircleDrawer-CmR4-Nzq.js"),__vite__mapDeps([0,1,2]));await a.addShape("circle",new r,e)}export{o as loadCircleShape};
