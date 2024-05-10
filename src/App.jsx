@@ -17,6 +17,7 @@ import SupportedPlatforms from "./components/SupportedPlatforms"
 function App() {
   return (
     <>
+    {/* Hello world  */}
     <Navbar/>
     <Hero/>
     <WhyAR/>
