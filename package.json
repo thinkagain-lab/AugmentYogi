@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://thinkagain-lab.github.io/AugmentYogi",
+  "homepage": "https://augmentyogi.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
