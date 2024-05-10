@@ -3,14 +3,14 @@ import React from "react";
 function WhyAR() {
   return (
     <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue h-screen relative z-10">
-      <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
         {/* Row */}
         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
           <div className="sm:text-l text-gray-400">
-            <h2 className="mb-4 text-xl md:text-3xl font-extrabold tracking-tight text-white lg:text-left text-center">
+            <h2 className="mb-4 text-xl md:text-3xl font-extrabold tracking-tight text-white text-left">
               AR elevates Brand Recall by 70%
             </h2>
-            <p className="mb-8 font-light text-sm text-center md:text-left md:text-xl">
+            <p className="mb-8 font-light text-sm text-left md:text-xl">
               Experience the Marketing Revolution: AR Elevates Engagement with
               Stunning Visuals, Enhancing Memory Recall by 70%. Say Goodbye to
               Traditional Mobile Video – Embrace AR's Creative Filters and

@@ -8,7 +8,7 @@ const SoldFilters = () => {
       image:'soldfilter/solffilterpreview/EaglesEye.gif',
       title: "Eagles Eye",
       description: "A Filter for Fashion Diadem",
-      logo:'soldfilter/logo/EELogo.png',
+      logo:'soldfilter/logo/EaglesEyeLogo.png',
       link: "https://www.instagram.com/ar/1147775182881685",
     },
     {
@@ -16,7 +16,7 @@ const SoldFilters = () => {
       image: 'soldfilter/solffilterpreview/GDGKolkata.gif',
       title: "GDG KOLKATA",
       description: "A Filter for the Tech Angel Contest",
-      logo:'soldfilter/logo/GDG_KOLKATA_NEW-1.jpeg',
+      logo:'soldfilter/logo/GDGKolkataLogo.png',
       link: "https://www.instagram.com/ar/858374968632558",
     },
     {
@@ -24,7 +24,7 @@ const SoldFilters = () => {
       image: 'soldfilter/solffilterpreview/IEEEIEMCrown.gif',
       title: "IEEE",
       description: " IEEE IEM Crown Filter",
-      logo:'soldfilter/logo/IEEEIEMCrown.png',
+      logo:'soldfilter/logo/IEEELogo.png',
       link: "https://www.instagram.com/ar/1360959181355645",
     },
     {
@@ -32,15 +32,15 @@ const SoldFilters = () => {
       image: 'soldfilter/solffilterpreview/IIESTIShibpurImpetusCrown.gif',
       title: "IIEST SHIBPUR",
       description: "IIEST Shibpur Impetus Crown",
-      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      logo:'soldfilter/logo/IIESTSHIBPURLogo.png',
       link: "https://www.instagram.com/ar/3059370707702073",
     },
     {
       id: 5,
       image: 'soldfilter/solffilterpreview/IEEEJadavpurAiCSSC.gif',
       title: "IIEST Jadavpur",
-      description: "IEEEJadavpurAiCSSC ",
-      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      description: "IEEE Jadavpur AiCSSC ",
+      logo:'soldfilter/logo/IEEEJadavpur.png',
       link: "#",
     },
     {
@@ -48,7 +48,7 @@ const SoldFilters = () => {
       image: 'soldfilter/solffilterpreview/GDGDurgapur.gif',
       title: "GDG Durgapur",
       description: "Tech Champ Contest",
-      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      logo:'soldfilter/logo/GDGDurgapur.png',
       link: "https://www.instagram.com/ar/2828325740644417",
     },
     {
@@ -56,7 +56,7 @@ const SoldFilters = () => {
       image: 'soldfilter/solffilterpreview/KolkataThunderBolt.gif',
       title: "Kolkata Thunderbolts",
       description: "Toofan Roar",
-      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      logo:'soldfilter/logo/GDGDurgapur.png',
       link: "https://www.instagram.com/ar/3059370707702073",
     },
     {
@@ -64,7 +64,7 @@ const SoldFilters = () => {
       image: 'soldfilter/solffilterpreview/IIEST_SHIBPURS_Standee.gif',
       title: "IIEST SHIBPUR",
       description: "Impetus Selfie Stand",
-      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      logo:'soldfilter/logo/IIESTSHIBPURLogo.png',
       link: "https://www.instagram.com/ar/3059370707702073",
     },
    
@@ -106,7 +106,7 @@ const SoldFilters = () => {
                     </p>
                     <div className="flex justify-between items-center mt-5 mb-5 ">
                       <span className="text-2xl font-extrabold text-gray-900">
-                        {card.logo ? <img className="border h-10 w-20" src={card.logo} /> : ''}
+                        {card.logo ? <img className="h-15 w-25" src={card.logo} /> : ''}
                       </span>
                       <a
                         href={card.link}

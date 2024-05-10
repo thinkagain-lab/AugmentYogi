@@ -15,7 +15,7 @@ const SupportedPlatforms = () => {
 
         <div className="flex gap-10 text-center justify-center items-center mt-10">
             <div>
-            <i class="fa-brands fa-facebook-f px-5 py-3 text-2xl  rounded-full bg-blue-500 text-white"></i>
+            <i class="fa-brands fa-facebook-f px-6 py-4 text-2xl  rounded-full bg-blue-500 text-white"></i>
             </div>
 
             <div>
