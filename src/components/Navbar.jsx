@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-
-const Navbar = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
-  const [visible, setVisible] = useState(true);
+function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const isVisible = prevScrollPos > currentScrollPos;
       const scrollPosition = window.scrollY;
-
-      setPrevScrollPos(currentScrollPos);
-      setVisible(isVisible);
-
       if (scrollPosition > 200) {
         setIsScrolled(true);
       } else {
@@ -24,21 +16,89 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos]);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-  const navbarClass = visible ? "navbar fixed top-0 w-full z-20 slide-down" : "navbar fixed -top-16 w-full z-20 hidden slide-up"; // Adjust the top value to hide the navbar completely
-  const navbarColor = isScrolled ? "bg-gray-900" : "bg-transparent"; // Change navbar color based on whether scrolled or not
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMenuOpen]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
-    <nav className={`${navbarClass} ${navbarColor} transition-all`}>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="ay_white.svg" className="h-14 w-48" alt="AY LOGO" />
+    <nav
+      className={`w-full fixed z-20 transition-all ${
+        isScrolled ? "bg-customColor-dark-blue" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+        <a
+          href="#"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="ay_white.svg"
+            className="h-14 w-48"
+            alt="AY LOGO"
+          />
         </a>
+        
+        {/* Hamburger menu button or Close button */}
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <i className={`fa-solid fa-${isMenuOpen ? "times" : "bars"} text-2xl`}></i> {/* Close button or Hamburger button based on isMenuOpen */}
+          </button>
+        </div>
 
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+        {/* Mobile menu */}
+        <div className={`md:hidden fixed top-0 left-0 w-full h-full bg-customColor-dark-blue ${isMenuOpen ? "block" : "hidden"}`} id="mobile-menu">
+          <ul className="font-medium flex flex-col items-center justify-center h-full">
+            <li>
+              <a
+                href="#oursolutions"
+                className="block py-2 px-3 text-white rounded"
+                aria-current="page"
+                onClick={closeMenu}
+              >
+                Store
+              </a>
+            </li>
+            <li>
+              <a
+                href="#tryoutyourself"
+                className="block py-2 px-3 text-white rounded"
+                onClick={closeMenu} 
+              >
+                Explore Filters
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contactform"
+                className="block py-2 px-3 text-white rounded"
+                onClick={closeMenu}
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Desktop menu */}
+        <div className="hidden md:block md:w-auto" id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0">
             <li>
               <a
                 href="#oursolutions"
@@ -48,15 +108,19 @@ const Navbar = () => {
                 Store
               </a>
             </li>
-
             <li>
-              <a href="#tryoutyourself" className="block py-2 px-3 text-white">
+              <a
+                href="#tryoutyourself"
+                className="block py-2 px-3 text-white rounded"
+              >
                 Explore Filters
               </a>
             </li>
-
             <li>
-              <a href="#contactform" className="block py-2 px-3 text-white">
+              <a
+                href="#contactform"
+                className="block py-2 px-3 text-white rounded"
+              >
                 Contact Us
               </a>
             </li>
@@ -65,6 +129,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

@@ -22,7 +22,7 @@ const SoldFilters = () => {
     {
       id: 3,
       image: 'soldfilter/solffilterpreview/IEEEIEMCrown.gif',
-      title: "IEEE",
+      title: "IEEE IEM",
       description: " IEEE IEM Crown Filter",
       logo:'soldfilter/logo/IEEELogo.png',
       link: "https://www.instagram.com/ar/1360959181355645",
@@ -38,7 +38,7 @@ const SoldFilters = () => {
     {
       id: 5,
       image: 'soldfilter/solffilterpreview/IEEEJadavpurAiCSSC.gif',
-      title: "IIEST Jadavpur",
+      title: "IEEE Jadavpur",
       description: "IEEE Jadavpur AiCSSC ",
       logo:'soldfilter/logo/IEEEJadavpur.png',
       link: "#",
@@ -106,7 +106,7 @@ const SoldFilters = () => {
                     </p>
                     <div className="flex justify-between items-center mt-5 mb-5 ">
                       <span className="text-2xl font-extrabold text-gray-900">
-                        {card.logo ? <img className="h-15 w-25" src={card.logo} /> : ''}
+                        {card.logo ? <img className="h-18 w-24" src={card.logo} /> : ''}
                       </span>
                       <a
                         href={card.link}
