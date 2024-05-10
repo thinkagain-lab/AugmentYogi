@@ -72,7 +72,7 @@ function Navbar() {
                 aria-current="page"
                 onClick={closeMenu}
               >
-                Store
+                Buy AR Filters
               </a>
             </li>
             <li>
