@@ -11,4 +11,23 @@ html, body
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  transition: transform 0.3s ease; /* Add a transition effect for smooth hiding/showing */
+}
+
+.navbar.hidden {
+  transform: translateY(-100%); /* Fully hide the navbar by moving it up */
+}
+
+.slide-down {
+  transform: translateY(0); /* Slide down the navbar */
+}
+
+.slide-up {
+  transform: translateY(-100%); /* Slide up the navbar */
 }

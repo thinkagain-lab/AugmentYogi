@@ -6,7 +6,7 @@ const OurSolutions=()=> {
   const solutionsArray = [
     {
       id:1,
-      img:'storeimg/faceFilter.jpg',
+      img:'storeimg/faceFilterBorder.png',
       name:'Face Filter',
       description: 'AR face filters offer enjoyable methods to interact with your audience, enhancing visibility and driving sales',
       originalPrice:'₹11,999',
@@ -14,7 +14,7 @@ const OurSolutions=()=> {
     },
     {
       id:2,
-      img:'storeimg/RandomisersFilter.jpg',
+      img:'storeimg/RandomisersFilterBorder.png',
       name:'Randomisers Filter',
       description: 'Randomisers refer to software capable of generating random content, including text, numbers, expressions, and even facial features',
       originalPrice:'₹26,399',
@@ -22,7 +22,7 @@ const OurSolutions=()=> {
     },
     {
       id:3,
-      img:'storeimg/WorldEffectFilter.jpg',
+      img:'storeimg/WorldEffectFilterBorder.png',
       name:'World Effect Filter',
       description: 'World effects integrate virtual objects seamlessly into real-world environments',
       originalPrice:'₹57,599',
@@ -30,7 +30,7 @@ const OurSolutions=()=> {
     },
     {
       id:4,
-      img:'storeimg/TrackersFilter.jpg',
+      img:'storeimg/TrackersFilterBorder.png',
       name:'Trackers Filter',
       description: 'This filter functions as a plane, body, image, and target tracker, enabling the creation of interactive AR effects that can engage with art and iconic imagery',
       originalPrice:'₹69.599',
@@ -38,7 +38,7 @@ const OurSolutions=()=> {
     },
     {
       id:5,
-      img:'storeimg/MiniGamesFilter.jpg',
+      img:'storeimg/MiniGamesFilterBorder.png',
       name:'Mini-Games / Quizzes Filters',
       description: 'An engaging filter offering various games, quizzes, and fun activities for entertainment',
       originalPrice:'₹91,199',
@@ -46,7 +46,7 @@ const OurSolutions=()=> {
     },
     {
       id:6,
-      img:'storeimg/PortalFilter.jpg',
+      img:'storeimg/PortalFilterBorder.png',
       name:'Portal Filter',
       description: 'AR portals serve as gateways to immersive virtual worlds, accessible through doorways, windows, and portals',
       originalPrice:'₹119,999',

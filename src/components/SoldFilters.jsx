@@ -5,79 +5,77 @@ const SoldFilters = () => {
   const cards = [
     {
       id: 1,
-      image:'/public/ourfilter/facetatoofilter.jpeg',
+      image:'soldfilter/solffilterpreview/EaglesEye.gif',
       title: "Eagles Eye",
       description: "A Filter for Fashion Diadem",
-      logo:'/public/soldfilter/logo/EELogo.png',
+      logo:'soldfilter/logo/EELogo.png',
       link: "https://www.instagram.com/ar/1147775182881685",
     },
     {
       id: 2,
-      image: `https://source.unsplash.com/random/300x200?${encodeURIComponent(
-        "Smoothie"
-      )}`,
-      title: "Smoothie",
-      description: "Refreshing blend of fruits and yogurt.",
-      price: 5.49,
-      link: "https://lqrs.com",
+      image: 'soldfilter/solffilterpreview/GDGKolkata.gif',
+      title: "GDG KOLKATA",
+      description: "A Filter for the Tech Angel Contest",
+      logo:'soldfilter/logo/GDG_KOLKATA_NEW-1.jpeg',
+      link: "https://www.instagram.com/ar/858374968632558",
     },
     {
       id: 3,
-      image: `https://source.unsplash.com/random/300x200?${encodeURIComponent(
-        "Iced Coffee"
-      )}`,
-      title: "Iced Coffee",
-      description: "Cold brewed coffee with a hint of vanilla.",
-      price: 4.99,
-      link: "https://lqrs.com",
+      image: 'soldfilter/solffilterpreview/IEEEIEMCrown.gif',
+      title: "IEEE",
+      description: " IEEE IEM Crown Filter",
+      logo:'soldfilter/logo/IEEEIEMCrown.png',
+      link: "https://www.instagram.com/ar/1360959181355645",
     },
     {
       id: 4,
-      image: `https://source.unsplash.com/random/300x200?${encodeURIComponent(
-        "Mojito"
-      )}`,
-      title: "Mojito",
-      description: "Classic Cuban cocktail with mint and lime.",
-      price: 7.99,
-      link: "https://lqrs.com",
+      image: 'soldfilter/solffilterpreview/IIESTIShibpurImpetusCrown.gif',
+      title: "IIEST SHIBPUR",
+      description: "IIEST Shibpur Impetus Crown",
+      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      link: "https://www.instagram.com/ar/3059370707702073",
     },
     {
       id: 5,
-      image: `https://source.unsplash.com/random/300x200?${encodeURIComponent(
-        "Matcha Latte"
-      )}`,
-      title: "Matcha Latte",
-      description: "Creamy green tea latte, rich in antioxidants.",
-      price: 6.49,
-      link: "https://lqrs.com",
+      image: 'soldfilter/solffilterpreview/IEEEJadavpurAiCSSC.gif',
+      title: "IIEST Jadavpur",
+      description: "IEEEJadavpurAiCSSC ",
+      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      link: "#",
     },
     {
       id: 6,
-      image: `https://source.unsplash.com/random/300x200?${encodeURIComponent(
-        "Fruit Punch"
-      )}`,
-      title: "Fruit Punch",
-      description: "Sweet and tangy punch, bursting with fruity flavors.",
-      price: 3.99,
-      link: "https://lqrs.com",
+      image: 'soldfilter/solffilterpreview/GDGDurgapur.gif',
+      title: "GDG Durgapur",
+      description: "Tech Champ Contest",
+      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      link: "https://www.instagram.com/ar/2828325740644417",
     },
     {
       id: 7,
-      image: `https://source.unsplash.com/random/300x200?${encodeURIComponent(
-        "Bubble Tea"
-      )}`,
-      title: "Bubble Tea",
-      description: "Chewy tapioca pearls in a sweet milk tea base.",
-      price: 4.99,
-      link: "https://lqrs.com",
+      image: 'soldfilter/solffilterpreview/KolkataThunderBolt.gif',
+      title: "Kolkata Thunderbolts",
+      description: "Toofan Roar",
+      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      link: "https://www.instagram.com/ar/3059370707702073",
     },
+    {
+      id: 8,
+      image: 'soldfilter/solffilterpreview/IIEST_SHIBPURS_Standee.gif',
+      title: "IIEST SHIBPUR",
+      description: "Impetus Selfie Stand",
+      logo:'soldfilter/logo/IIEST_Shibpur_Logo.png',
+      link: "https://www.instagram.com/ar/3059370707702073",
+    },
+   
+   
   ];
 
   return (
     <section className="bg-gradient-to-b from-customColor-dark-magenta via-customColor-dark-blue to-customColor-dark-magenta">
       <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
         <div className="text-center px-6">
-          <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
             Our Happy Clients
           </h2>
           <p className="text-sm text-gray-400 mt-3">
@@ -93,11 +91,11 @@ const SoldFilters = () => {
           >
             {cards.map((card) => (
               <div className="flex-none w-64 snap-center" key={card.id}>
-                <div className="bg-customColor-dark-blue rounded-lg overflow-hidden mb-4">
+                <div className="bg-white bg-opacity-50 rounded-lg overflow-hidden ">
                   <img
                     src={card.image}
                     alt=""
-                    className="w-full h-40 object-cover"
+                    className="w-full object-cover"
                   />
                   <div className="p-4">
                     <h3 className="text-lg leading-6 font-bold text-white">
@@ -106,9 +104,9 @@ const SoldFilters = () => {
                     <p className="text-gray-200 mt-2 text-sm">
                       {card.description}
                     </p>
-                    <div className="flex justify-between items-center mt-4">
+                    <div className="flex justify-between items-center mt-5 mb-5 ">
                       <span className="text-2xl font-extrabold text-gray-900">
-                        {card.logo ? <img height={40} width={40} src={card.logo} /> : ''}
+                        {card.logo ? <img className="border h-10 w-20" src={card.logo} /> : ''}
                       </span>
                       <a
                         href={card.link}

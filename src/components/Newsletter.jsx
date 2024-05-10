@@ -1,4 +1,5 @@
 import React from "react";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 const Newsletter = () => {
   return (
@@ -27,12 +28,11 @@ const Newsletter = () => {
             placeholder="Enter your email"
           />
 
-          <button
-            type="submit"
-            className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
-           Subscribe
-          </button>
+        
+          <button className="flex items-center px-3.5 py-2.5 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta ">
+                <span>Subscribe</span>
+                
+              </button>
         </form>
 
         <svg

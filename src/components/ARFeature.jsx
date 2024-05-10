@@ -5,7 +5,7 @@ function ARFeature() {
     <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue ">
       <div className="relative z-10 max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
         <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
-          How Augmented Reakity is Helping Brands
+          How Augmented Reality is Helping Brands
         </h2>
 
         <div

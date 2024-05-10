@@ -5,9 +5,9 @@ const Footer = () => {
     <footer className="relative z-10 bg-customColor-dark-blue text-white  pt-8 pb-6">
       <div className=" max-w-screen-xl px-4  mx-auto ">
         <div className="flex flex-wrap text-left lg:text-left">
-          <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl font-semibold text-blueGray-700">
-              AUGMENT YOGI
+          <div className="w-full lg:w-6/12 ">
+            <h4 className="mb-2 font-semibold">
+              <img src="ay_white.svg" className="h-14 w-48  mx-[-22px]" alt=""  />
             </h4>
             <h5 className="mt-0 mb-2 text-blueGray-600">
               Keep in touch with the leading Creators of the Best Augmented
