@@ -6,7 +6,7 @@ const Newsletter = () => {
     <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue ">
     <div className="relative z-10 max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl rounded-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-        <h2 className="mx-auto text-center text-3xl font-bold text-white sm:text-4xl">
+        <h2 className="mx-auto text-center text-xl md:text-3xl font-bold text-white sm:text-4xl">
         Stay Ahead in the Augmented Reality Universe
         </h2>
 

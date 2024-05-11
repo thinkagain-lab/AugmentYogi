@@ -55,15 +55,17 @@ function Navbar() {
           />
         </a>
         
-        {/* Hamburger menu button or Close button */}
+        
         <div className="md:hidden">
+
           <button onClick={toggleMenu} className="text-white focus:outline-none">
-            <i className={`fa-solid fa-${isMenuOpen ? "times" : "bars"} text-2xl`}></i> {/* Close button or Hamburger button based on isMenuOpen */}
+            <i className={`relative z-20 fa-solid fa-${isMenuOpen ? "times" : "bars"} text-2xl`}></i> 
           </button>
+
         </div>
 
         {/* Mobile menu */}
-        <div className={`md:hidden fixed top-0 left-0 w-full h-full bg-customColor-dark-blue ${isMenuOpen ? "block" : "hidden"}`} id="mobile-menu">
+        <div className={`md:hidden fixed top-20 left-0 w-full h-100 p-20 bg-customColor-dark-blue ${isMenuOpen ? "block" : "hidden"}`} id="mobile-menu">
           <ul className="font-medium flex flex-col items-center justify-center h-full">
             <li>
               <a
@@ -126,6 +128,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
+
+
       </div>
     </nav>
   );

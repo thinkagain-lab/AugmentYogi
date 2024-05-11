@@ -38,7 +38,8 @@ function GetYourProject() {
               </h5>
             </a>
             <p class="mb-3 font-normal text-gray-400 text-center">
-              Explore the filters and choose as per your business needs
+              Fill the Connect With Us form and send us your personalised
+              message
             </p>
           </div>
 
@@ -54,7 +55,8 @@ function GetYourProject() {
               </h5>
             </a>
             <p class="mb-3 font-normal text-gray-400 text-center">
-              Explore the filters and choose as per your business needs
+              Our tech team will follow up with you shortly, providing you the
+              best quality AR solution
             </p>
           </div>
         </div>

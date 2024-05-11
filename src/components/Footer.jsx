@@ -9,7 +9,7 @@ const Footer = () => {
             <h4 className="mb-2 font-semibold">
               <img src="ay_white.svg" className="h-14 w-48  mx-[-22px]" alt=""  />
             </h4>
-            <h5 className="mt-0 mb-2 text-blueGray-600">
+            <h5 className="mt-0 mb-2 pl-3 text-blueGray-600">
               Keep in touch with the leading Creators of the Best Augmented
               Reality Experience
             </h5>
@@ -51,8 +51,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
+          <div className="w-full lg:w-6/12  ">
+            <div className="flex flex-wrap  items-top mb-6">
+
               <div className="w-full lg:w-6/12 px-2 ml-auto">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Useful Links
@@ -85,7 +86,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                      
                     >
                       Terms &amp; Conditions
                     </a>
@@ -100,11 +101,11 @@ const Footer = () => {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="tel:+918240925036"
+                      href="tel:+917908369443"
                       className="text-blueGray-600 hover:text-blueGray-800  block pb-2 text-sm"
                     >
                       {" "}
-                      <i class="fa fa-phone-alt me-3"></i>+91 82409 25036
+                      <i class="fa fa-phone-alt me-3"></i>+91 7908369443
                     </a>
                   </li>
 
@@ -140,7 +141,7 @@ const Footer = () => {
                 href="https://thinkagainlab.com"
                 className="text-blueGray-500 hover:text-blueGray-800"
               >
-                Made with <i className="fa-solid fa-heart text-white"></i> at
+                Made with <i className="fa-solid fa-heart text-white"></i> by
                 Think Again Lab
               </a>
             </div>

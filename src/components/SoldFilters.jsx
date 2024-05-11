@@ -1,74 +1,84 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./SoldFilters.css";
+import { motion } from "framer-motion";
 
 const SoldFilters = () => {
+  const [carouselWidth, setCarouselWidth] = useState(0);
+  const carousel = useRef();
+
+  useEffect(() => {
+    // console.log("Carousel Width:",carousel.current.scrollWidth)
+    setCarouselWidth(
+      carousel.current.scrollWidth - carousel.current.offsetWidth
+    );
+  }, [carousel]);
+
   const cards = [
     {
+      id: 7,
+      image: "soldfilter/solffilterpreview/KolkataThunderBolt.gif",
+      title: "Kolkata Thunderbolts",
+      description: "Toofan Roar",
+      logo: "soldfilter/logo/KolkataThunderbolt.png",
+      link: "https://www.instagram.com/ar/3059370707702073",
+    },
+    {
       id: 1,
-      image:'soldfilter/solffilterpreview/EaglesEye.gif',
+      image: "soldfilter/solffilterpreview/EaglesEye.gif",
       title: "Eagles Eye",
       description: "A Filter for Fashion Diadem",
-      logo:'soldfilter/logo/EaglesEyeLogo.png',
+      logo: "soldfilter/logo/EaglesEyeLogo.png",
       link: "https://www.instagram.com/ar/1147775182881685",
     },
     {
       id: 2,
-      image: 'soldfilter/solffilterpreview/GDGKolkata.gif',
+      image: "soldfilter/solffilterpreview/GDGKolkata.gif",
       title: "GDG KOLKATA",
       description: "A Filter for the Tech Angel Contest",
-      logo:'soldfilter/logo/GDGKolkataLogo.png',
+      logo: "soldfilter/logo/GDGKolkataLogo.png",
       link: "https://www.instagram.com/ar/858374968632558",
     },
     {
-      id: 3,
-      image: 'soldfilter/solffilterpreview/IEEEIEMCrown.gif',
-      title: "IEEE IEM",
-      description: " IEEE IEM Crown Filter",
-      logo:'soldfilter/logo/IEEELogo.png',
-      link: "https://www.instagram.com/ar/1360959181355645",
-    },
-    {
       id: 4,
-      image: 'soldfilter/solffilterpreview/IIESTIShibpurImpetusCrown.gif',
+      image: "soldfilter/solffilterpreview/IIESTIShibpurImpetusCrown.gif",
       title: "IIEST SHIBPUR",
       description: "IIEST Shibpur Impetus Crown",
-      logo:'soldfilter/logo/IIESTSHIBPURLogo.png',
-      link: "https://www.instagram.com/ar/3059370707702073",
-    },
-    {
-      id: 5,
-      image: 'soldfilter/solffilterpreview/IEEEJadavpurAiCSSC.gif',
-      title: "IEEE Jadavpur",
-      description: "IEEE Jadavpur AiCSSC ",
-      logo:'soldfilter/logo/IEEEJadavpur.png',
-      link: "#",
-    },
-    {
-      id: 6,
-      image: 'soldfilter/solffilterpreview/GDGDurgapur.gif',
-      title: "GDG Durgapur",
-      description: "Tech Champ Contest",
-      logo:'soldfilter/logo/GDGDurgapur.png',
-      link: "https://www.instagram.com/ar/2828325740644417",
-    },
-    {
-      id: 7,
-      image: 'soldfilter/solffilterpreview/KolkataThunderBolt.gif',
-      title: "Kolkata Thunderbolts",
-      description: "Toofan Roar",
-      logo:'soldfilter/logo/GDGDurgapur.png',
+      logo: "soldfilter/logo/IIESTSHIBPURLogo.png",
       link: "https://www.instagram.com/ar/3059370707702073",
     },
     {
       id: 8,
-      image: 'soldfilter/solffilterpreview/IIEST_SHIBPURS_Standee.gif',
+      image: "soldfilter/solffilterpreview/IIEST_SHIBPURS_Standee.gif",
       title: "IIEST SHIBPUR",
       description: "Impetus Selfie Stand",
-      logo:'soldfilter/logo/IIESTSHIBPURLogo.png',
+      logo: "soldfilter/logo/IIESTSHIBPURLogo.png",
       link: "https://www.instagram.com/ar/3059370707702073",
     },
-   
-   
+    {
+      id: 3,
+      image: "soldfilter/solffilterpreview/IEEEIEMCrown.gif",
+      title: "IEEE IEM",
+      description: " IEEE IEM Crown Filter",
+      logo: "soldfilter/logo/IEEELogo.png",
+      link: "https://www.instagram.com/ar/1360959181355645",
+    },
+
+    {
+      id: 6,
+      image: "soldfilter/solffilterpreview/GDGDurgapur.gif",
+      title: "GDG Durgapur",
+      description: "Tech Champ Contest",
+      logo: "soldfilter/logo/GDGDurgapur.png",
+      link: "https://www.instagram.com/ar/2828325740644417",
+    },
+    {
+      id: 5,
+      image: "soldfilter/solffilterpreview/IEEEJadavpurAiCSSC.gif",
+      title: "IEEE Jadavpur",
+      description: "IEEE Jadavpur AiCSSC ",
+      logo: "soldfilter/logo/IEEEJadavpur.png",
+      link: "#",
+    },
   ];
 
   return (
@@ -79,13 +89,23 @@ const SoldFilters = () => {
             Our Happy Clients
           </h2>
           <p className="text-sm text-gray-400 mt-3">
-          Fill out your details and get your customised filter ready to rock and roll
+            Fill out your details and get your customised filter ready to rock
+            and roll
           </p>
-         
         </div>
 
-        <div className="relative px-0.5" id="oursoldfilter">
-          <div
+        <motion.div
+          ref={carousel}
+          whileTap={{ cursor: "grabbing" }}
+          className="relative px-0.5"
+          id="oursoldfilter"
+        >
+          <motion.div
+            drag="x"
+            dragConstraints={{
+              right: 0,
+              left: -carouselWidth,
+            }}
             className="flex snap-x snap-mandatory gap-4"
             style={{ width: "max-content" }}
           >
@@ -106,7 +126,11 @@ const SoldFilters = () => {
                     </p>
                     <div className="flex justify-between items-center mt-5 mb-5 ">
                       <span className="text-2xl font-extrabold text-gray-900">
-                        {card.logo ? <img className="h-18 w-24" src={card.logo} /> : ''}
+                        {card.logo ? (
+                          <img className="h-18 w-24" src={card.logo} />
+                        ) : (
+                          ""
+                        )}
                       </span>
                       <a
                         href={card.link}
@@ -119,8 +143,8 @@ const SoldFilters = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

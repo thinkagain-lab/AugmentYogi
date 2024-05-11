@@ -1,6 +1,7 @@
 #oursoldfilter
 {
     overflow-x: scroll !important;
+    cursor: grab;
 }
 #oursoldfilter::-webkit-scrollbar {
     display: none;

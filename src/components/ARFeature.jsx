@@ -4,16 +4,15 @@ function ARFeature() {
   return (
     <section className="bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue ">
       <div className="relative z-10 max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <h2 className="mb-4 text-xl md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
+        <h2 className="mb-4 text-md md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
           How Augmented Reality is Helping Brands
         </h2>
 
         <div
-          className="h-96 rounded-md overflow-hidden bg-cover bg-center"
+          className="h-96 rounded-md overflow-hidden bg-cover bg-center relative"
           style={{ backgroundImage: "url('features/feature02.jpg')" }}
         >
-          ``
-          <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
+          <div className="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center">
             <div className="px-10 max-w-xl">
               <h2 className="text-2xl text-white font-semibold">
                 AR Filters for Agile Marketing
@@ -25,8 +24,11 @@ function ARFeature() {
                 provide a budget-friendly option, eliminating the need to
                 purchase specific ad space
               </p>
-              <button className="flex items-center mt-4 px-3 py-2 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta ">
-                <span>Explore Filters</span>
+              <button className="flex items-center mt-4 px-3 py-2 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta">
+                <span>
+                  {" "}
+                  <a href="#tryoutyourself">Explore Filters</a>
+                </span>
                 <svg
                   className="h-5 w-5 mx-2"
                   fill="none"
@@ -42,11 +44,14 @@ function ARFeature() {
             </div>
           </div>
         </div>
+
         <div className="md:flex mt-8 md:-mx-4">
-          <div className="w-full h-96 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2"
-          style={{
-            backgroundImage: "url('features/feature04.jpeg')",
-          }}>
+          <div
+            className="w-full h-96 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2"
+            style={{
+              backgroundImage: "url('features/feature04.jpeg')",
+            }}
+          >
             <div className="bg-customColor-dark-blue  bg-opacity-80 flex items-center h-full">
               <div className="px-10 max-w-xl ">
                 <h2 className="text-2xl text-white font-semibold">
@@ -58,8 +63,11 @@ function ARFeature() {
                   feeling confident in your choices. Let's empower your shopping
                   experience
                 </p>
-                <button className="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
-                  <span>Explore Filters</span>
+                <button className="flex items-center mt-4 px-3 py-2 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta lg:bg-transparent">
+                  <span>
+                    {" "}
+                    <a href="#tryoutyourself">Explore Filters</a>
+                  </span>
                   <svg
                     className="h-5 w-5 mx-2"
                     fill="none"
@@ -91,8 +99,11 @@ function ARFeature() {
                   videos, resulting in 4x greater engagement. With a plethora of
                   tools, they facilitate effortless brand interaction
                 </p>
-                <button className="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
-                  <span>Explore Filters</span>
+                <button className="flex items-center mt-4 px-3 py-2 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta lg:bg-transparent">
+                  <span>
+                    {" "}
+                    <a href="#tryoutyourself">Explore Filters</a>
+                  </span>
                   <svg
                     className="h-5 w-5 mx-2"
                     fill="none"
