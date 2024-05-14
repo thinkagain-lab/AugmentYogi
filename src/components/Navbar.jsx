@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,12 +41,12 @@ function Navbar() {
   return (
     <nav
       className={`w-full fixed z-20 transition-all ${
-        isScrolled ? "bg-customColor-dark-blue" : "bg-transparent"
+        isScrolled ? "bg-customColor-dark-blue" : "bg-customColor-dark-blue lg:bg-transparent"
       }`}
     >
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
@@ -53,7 +54,7 @@ function Navbar() {
             className="h-14 w-48"
             alt="AY LOGO"
           />
-        </a>
+        </Link>
         
         
         <div className="md:hidden">
@@ -69,7 +70,7 @@ function Navbar() {
           <ul className="font-medium flex flex-col items-center justify-center h-full">
             <li>
               <a
-                href="#oursolutions"
+                to="https://www.augmentyogi.com/#oursolutions"
                 className="block py-2 px-3 text-white rounded"
                 aria-current="page"
                 onClick={closeMenu}
@@ -103,16 +104,16 @@ function Navbar() {
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0">
             <li>
               <a
-                href="#oursolutions"
+                to="https://www.augmentyogi.com/#oursolutions"
                 className="block py-2 px-3 text-white rounded md:bg-transparent"
                 aria-current="page"
               >
-                Store
+                 Buy AR Filters
               </a>
             </li>
             <li>
               <a
-                href="#tryoutyourself"
+                href="https://www.augmentyogi.com/#tryoutyourself"
                 className="block py-2 px-3 text-white rounded"
               >
                 Explore Filters
@@ -120,7 +121,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#contactform"
+                href="https://www.augmentyogi.com/#contactform"
                 className="block py-2 px-3 text-white rounded"
               >
                 Contact Us

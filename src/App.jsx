@@ -1,38 +1,21 @@
-
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import WhyAR from "./components/WhyAR"
-import OurFiltersBenToGrid from "./components/OurFiltersBenToGrid"
-import GetYourProject from "./components/GetYourProject"
-import OurSolutions from "./components/OurSolutions"
-import ContactForm from "./components/ContactForm"
-import ARFeature from "./components/ARFeature"
-import Newsletter from "./components/Newsletter"
-import Footer from "./components/Footer"
-import SoldFilters from "./components/SoldFilters"
-import SupportedPlatforms from "./components/SupportedPlatforms"
-
-
+import About from "./pages/About";
+import TAC from "./pages/TAC";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Homepage from "./pages/Homepage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-    {/* Hello world  */}
-    <Navbar/>
-    <Hero/>
-    <WhyAR/>
-    <OurFiltersBenToGrid/>
-    <GetYourProject/>
-    <OurSolutions/>
-    <SupportedPlatforms/>
-    <SoldFilters/>
-    <ContactForm/>
-    <ARFeature/>
-    <Newsletter/>
-    <Footer/>
-    {/* Hello world */}
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+        <Route path="/termsandconditions" element={<TAC/>} />
+      </Routes>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;

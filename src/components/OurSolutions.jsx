@@ -15,7 +15,7 @@ const OurSolutions=()=> {
     {
       id:2,
       img:'storeimg/RandomisersFilterBorder.png',
-      name:'Randomisers Filter',
+      name:'Randomizers filter',
       description: 'Randomisers refer to software capable of generating random content, including text, numbers, expressions, and even facial features',
       originalPrice:'₹26,399',
       salePrice:'₹21,999'
