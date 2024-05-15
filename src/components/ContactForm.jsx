@@ -49,7 +49,7 @@ function ContactForm() {
 
   return (
     <>
-      <ToastContainer position="top-center" />
+    <ToastContainer position="top-center"/>
     <section
       className="relative z-10 bg-customColor-dark-blue"
       id="contactform"

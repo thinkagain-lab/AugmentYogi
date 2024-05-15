@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import OHeader from "../components/OHeaader";
 import Footer from "../components/Footer";
 
 const About = () => {
   return (
     <>
       <section className="mt-[-0.5m] bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue ">
-        <Navbar />
+        <OHeader />
 
         <div className="max-w-screen-xl px-4 py-4 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6 text-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 items-center">

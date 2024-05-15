@@ -1,21 +1,24 @@
 import React from "react";
 
+
 const SupportedPlatforms = () => {
+ 
+
   return (
     <section className="bg-customColor-dark-blue bg-opacity-100 flex flex-col justify-center items-center">
       <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6 text-center">
         <div>
-        <h2 className="text-md md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
-          Crafting Augmented Reality Experience for{" "}
-          <span className="text-blue-500">Facebook</span>{" "}
-          <span className="text-pink-500">Instagram</span> and{" "}
-          <span className="text-yellow-500">Snapchat</span>
-        </h2>
+          <h2 className="text-md md:text-3xl text-center my-4 font-extrabold tracking-tight text-white">
+            Crafting Augmented Reality Experience for{" "}
+            <span className="text-blue-500">Facebook</span>{" "}
+            <span className="text-pink-500">Instagram</span> and{" "}
+            <span className="text-yellow-500">Snapchat</span>
+          </h2>
 
-        <p className="text-sm text-gray-400 mt-3">
-          Let's understand the popularity of Augmented Reality Filters in
-          Facebook, Instagram and Snapchat along with some statistics
-        </p>
+          <p className="text-sm text-gray-400 mt-3">
+            Let's understand the popularity of Augmented Reality Filters in
+            Facebook, Instagram and Snapchat along with some statistics
+          </p>
         </div>
         <div className="flex flex-col items-center">
           {" "}

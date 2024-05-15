@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
-function Navbar() {
+function OHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
@@ -70,32 +69,32 @@ function Navbar() {
         <div className={`md:hidden fixed top-20 left-0 w-full h-100 p-20 bg-customColor-dark-blue ${isMenuOpen ? "block" : "hidden"}`} id="mobile-menu">
           <ul className="font-medium flex flex-col items-center justify-center h-full">
             <li>
-              <a
-                href="#oursolutions"
+              <Link
+                to='/'
                 className="block py-2 px-3 text-white rounded"
                 aria-current="page"
                 onClick={closeMenu}
               >
-                Buy AR Filters
-              </a>
+                Back to Store
+              </Link>
             </li>
             <li>
-              <a
-                href="#tryoutyourself"
+              <Link
+                to="/about"
                 className="block py-2 px-3 text-white rounded"
                 onClick={closeMenu} 
               >
-                Explore Filters
-              </a>
+                About Us
+              </Link>
             </li>
             <li>
-              <a
-                href="#contactform"
+              <Link
+                to="/termsandconditions"
                 className="block py-2 px-3 text-white rounded"
                 onClick={closeMenu}
               >
-                Contact Us
-              </a>
+                Terms and Conditions
+              </Link>
             </li>
           </ul>
         </div>
@@ -104,29 +103,29 @@ function Navbar() {
         <div className="hidden md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0">
             <li>
-              <a
-                href="#oursolutions"
+              <Link
+                to="/"
                 className="block py-2 px-3 text-white rounded md:bg-transparent"
                 aria-current="page"
               >
-                 Buy AR Filters
-              </a>
+                 Back to Store
+              </Link>
             </li>
             <li>
-              <a
-                href="#tryoutyourself"
+              <Link
+                to="/about"
                 className="block py-2 px-3 text-white rounded"
               >
-                Explore Filters
-              </a>
+                About Us
+              </Link>
             </li>
             <li>
-              <a
-                href="#contactform"
+              <Link
+                to="/termsandconditions"
                 className="block py-2 px-3 text-white rounded"
               >
-                Contact Us
-              </a>
+                Terms and Conditions
+              </Link>
             </li>
           </ul>
         </div>
@@ -137,4 +136,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default OHeader;

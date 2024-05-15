@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import OHeader from "../components/OHeaader";
 import Footer from "../components/Footer";
 
 const PrivacyPolicy = () => {
   return (
     <section className="mt-[-0.5m] bg-gradient-to-r from-customColor-dark-magenta to-customColor-dark-blue ">
-      <Navbar />
+      <OHeader/>
       <div className="max-w-screen-xl px-4 py-4  mx-auto space-y-4 lg:space-y-6 lg:py-24 lg:px-6 text-left text-gray-300">
         <h1 className="mt-20 md:mt-0 text-xl lg:text-3xl font-extrabold text-white">Privacy Policy</h1>
         <p className="mt-20 lg:mt-10">Last updated: May 14, 2024</p>

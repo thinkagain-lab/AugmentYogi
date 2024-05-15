@@ -2,9 +2,21 @@ import React, { useEffect, useState, useRef } from "react";
 import "./SoldFilters.css";
 import { motion } from "framer-motion";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const SoldFilters = () => {
   const [carouselWidth, setCarouselWidth] = useState(0);
   const carousel = useRef();
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow:5 ,
+    slidesToScroll: 1,
+  };
 
   useEffect(() => {
     // console.log("Carousel Width:",carousel.current.scrollWidth)
@@ -34,7 +46,7 @@ const SoldFilters = () => {
       id: 2,
       image: "soldfilter/solffilterpreview/GDGKolkata.gif",
       title: "GDG KOLKATA",
-      description: "A Filter for the Tech Angel Contest",
+      description: "Tech Angel Contest Filter",
       logo: "soldfilter/logo/GDGKolkataLogo.png",
       link: "https://www.instagram.com/ar/858374968632558",
     },
@@ -97,7 +109,7 @@ const SoldFilters = () => {
         <motion.div
           ref={carousel}
           whileTap={{ cursor: "grabbing" }}
-          className="relative px-0.5"
+          className="relative px-0.5 block lg:hidden"
           id="oursoldfilter"
         >
           <motion.div
@@ -145,6 +157,39 @@ const SoldFilters = () => {
             ))}
           </motion.div>
         </motion.div>
+
+        <Slider className="hidden lg:block" {...settings}>
+          {cards.map((card) => (
+            <div className="flex-none w-64 snap-center ps-1" key={card.id}>
+              <div className="bg-white bg-opacity-50 rounded-lg overflow-hidden ">
+                <img src={card.image} alt="" className="w-full object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg leading-6 font-bold text-white">
+                    {card.title}
+                  </h3>
+                  <p className="text-gray-200 mt-2 text-sm">
+                    {card.description}
+                  </p>
+                  <div className="flex justify-between items-center mt-5 mb-5 ">
+                    <span className="text-2xl font-extrabold text-gray-900">
+                      {card.logo ? (
+                        <img className="h-18 w-24" src={card.logo} />
+                      ) : (
+                        ""
+                      )}
+                    </span>
+                    <a
+                      href={card.link}
+                      className="text-white border border-customColor-dark-magenta hover:bg-customColor-dark-magenta focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    >
+                      Try Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );
