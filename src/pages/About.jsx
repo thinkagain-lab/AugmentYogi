@@ -1,6 +1,7 @@
 import React from "react";
 import OHeader from "../components/OHeaader";
 import Footer from "../components/Footer";
+import { Link, Route, Routes } from "react-router-dom";
 
 const About = () => {
   return (
@@ -73,11 +74,13 @@ const About = () => {
               </p>
 
               <div class="flex justify-center lg:justify-start mt-5">
-                <button className="mt-5 flex items-center relative p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium  rounded-lg group bg-gradient-to-br from-customColor-brand-blue to-customColor-brand-magenta group-hover:from-customColor-brand-blue group-hover:to-pink-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-purple-800">
+                <Link
+                to="/" 
+                className="mt-5 flex items-center relative p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium  rounded-lg group bg-gradient-to-br from-customColor-brand-blue to-customColor-brand-magenta group-hover:from-customColor-brand-blue group-hover:to-pink-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-purple-800">
                   <span className="relative text-sm md:text-base px-10 md:px-20 py-4 transition-all ease-in duration-75 bg-customColor-dark-blue rounded-md group-hover:bg-opacity-0">
                     Get Your Filter
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
