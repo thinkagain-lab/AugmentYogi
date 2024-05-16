@@ -13,7 +13,7 @@ const Newsletter = () => {
     try {
       if (emailNotify !== "") {
         const response = await fetch(
-          "https://sheetdb.io/api/v1/y4hgwq7gki8as",
+          "https://sheetdb.io/api/v1/uwrc92m4oxe5e",
           {
             method: "POST",
             headers: {
