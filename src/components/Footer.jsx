@@ -23,19 +23,22 @@ const Footer = () => {
               Reality Experience
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
-              <button
+
+
+              {/* <button
                 className="bg-white  text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <a href="https://twitter.com/thinkagainlab" target="_blank">
                   <i className="fab fa-twitter"></i>
                 </a>
-              </button>
+              </button> */}
+
               <button
                 className="bg-white text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="https://www.facebook.com/thinkagainlab" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61559493152520" target="_blank">
                   <i className="fab fa-facebook-square"></i>
                 </a>
               </button>
@@ -44,7 +47,7 @@ const Footer = () => {
                 className="bg-white text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="https://www.instagram.com/think_again_lab_official" target="_blank">
+                <a href="https://www.instagram.com/augmentyogi" target="_blank">
                   <i className="fab fa-instagram"></i>
                 </a>
               </button>
@@ -53,10 +56,12 @@ const Footer = () => {
                 className="bg-white text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="https://www.linkedin.com/company/thinkagainlab/" target="_blank">
+                <a href="https://www.linkedin.com/company/augment-yogi/" target="_blank">
                   <i className="fa-brands fa-linkedin-in"></i>
                 </a>
               </button>
+
+
             </div>
           </div>
 
@@ -120,22 +125,25 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
-                      href="mailto:thinkagainlab@gmail.com"
+                      href="tel:+918240925036"
+                      className="text-blueGray-600 hover:text-blueGray-800  block pb-2 text-sm"
                     >
                       {" "}
-                      <i class="fa fa-envelope me-3"></i>thinkagainlab@gmail.com
+                      <i class="fa fa-phone-alt me-3"></i>+91 8240925036
                     </a>
                   </li>
+
+                 
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
-                      href="https://www.thinkagainlab.com"
+                      href="mailto:augmentyogi@gmail.com"
                     >
                       {" "}
-                      <i class="fa fa-globe me-3"></i>thinkagainlab.com
+                      <i class="fa fa-envelope me-3"></i>augmentyogi@gmail.com
                     </a>
                   </li>
+                  
                 </ul>
               </div>
             </div>
