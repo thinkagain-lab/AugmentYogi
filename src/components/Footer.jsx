@@ -137,10 +137,10 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
-                      href="mailto:augmentyogi@gmail.com"
+                      href="mailto:changeyourreality@augmentyogi.com"
                     >
                       {" "}
-                      <i class="fa fa-envelope me-3"></i>augmentyogi@gmail.com
+                      <i class="fa fa-envelope me-3"></i>changeyourreality@augmentyogi.com
                     </a>
                   </li>
                   
