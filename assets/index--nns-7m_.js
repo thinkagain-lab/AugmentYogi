@@ -1,0 +1,2 @@
+const __vite__fileDeps=["assets/ColorUpdater-DgzZ-j8f.js","assets/index-mGJA-kqg.js","assets/index-DJqq__Fz.css"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
+import{_ as e}from"./index-mGJA-kqg.js";async function i(r,o=!0){await r.addParticleUpdater("color",async t=>{const{ColorUpdater:a}=await e(()=>import("./ColorUpdater-DgzZ-j8f.js"),__vite__mapDeps([0,1,2]));return new a(t)},o)}export{i as loadColorUpdater};
