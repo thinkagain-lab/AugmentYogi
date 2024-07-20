@@ -190,6 +190,19 @@ const SoldFilters = () => {
             </div>
           ))}
         </Slider>
+        <ul className="mx-auto mt-10 flex justify-center">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://calendly.com/augmentyogi/consultation"
+                  className="block py-2 px-3 text-white rounded"
+                >
+                  <span className="relative text-sm md:text-base items-center px-7 py-4 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta">
+                  Book A Free AR Consultancy  
+                  </span>
+                </a>
+              </li>
+            </ul>
       </div>
     </section>
   );

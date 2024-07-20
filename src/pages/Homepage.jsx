@@ -11,6 +11,7 @@ import Newsletter from "../components/Newsletter"
 import Footer from "../components/Footer"
 import SoldFilters from "../components/SoldFilters"
 import SupportedPlatforms from "../components/SupportedPlatforms"
+import OurAchivements from "../components/OurAchivements.jsx";
 
 
 
@@ -26,6 +27,7 @@ const Homepage = () => {
       <SupportedPlatforms />
       <SoldFilters />
       <ContactForm />
+      <OurAchivements/>
       <ARFeature />
       <Newsletter />
       <Footer />

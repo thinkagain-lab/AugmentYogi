@@ -7,7 +7,6 @@ const Newsletter = () => {
   const notify = () =>
     toast("We shall keep you updated about about the AR Space");
 
-
   const handlesSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -32,7 +31,7 @@ const Newsletter = () => {
         await notify();
         setEmailNotify("");
       } else {
-        console.log("Please provide an  valid email");
+        console.log("Please provide a valid email");
         setEmailNotify("");
       }
     } catch (err) {}
@@ -48,15 +47,15 @@ const Newsletter = () => {
               Stay Ahead in the Augmented Reality Universe
             </h2>
 
-            <p className="mx-auto mt-4 text-center text-md  text-gray-300">
+            <p className="mx-auto mt-4 text-center text-md text-gray-300">
               Join AugmentYogi's AR revolution for breakthrough tech, trends,
               and community engagement. Subscribe now for curated updates,
               in-depth analysis, and connect with like-minded individuals.
               Follow us for more insights and embark on an exciting journey into
-              the future of technology
+              the future of technology.
             </p>
 
-            <form className="mx-auto mt-10 flex max-w-md gap-x-4">
+            <form className="mx-auto mt-10 flex max-w-md gap-x-4" onSubmit={handlesSubmit}>
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
@@ -71,14 +70,14 @@ const Newsletter = () => {
                 placeholder="Enter your email"
                 onChange={(e) => setEmailNotify(e.target.value)}
               />
-
               <button
-                onClick={handlesSubmit}
+                type="submit"
                 className="flex items-center px-3.5 py-2.5 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta"
               >
                 <span>Subscribe</span>
               </button>
             </form>
+
 
             <svg
               viewBox="0 0 1024 1024"

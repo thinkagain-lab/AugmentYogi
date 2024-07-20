@@ -11,11 +11,11 @@ const Footer = () => {
           <div className="w-full lg:w-6/12 ">
             <h4 className="mb-2 font-semibold">
               <Link to="/">
-              <img
-                src="ay_white.svg"
-                className="h-14 w-48  mx-[-22px]"
-                alt=""
-              />
+                <img
+                  src="ay_white.svg"
+                  className="h-14 w-48  mx-[-22px]"
+                  alt=""
+                />
               </Link>
             </h4>
             <h5 className="mt-0 mb-2 text-blueGray-600">
@@ -23,8 +23,6 @@ const Footer = () => {
               Reality Experience
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
-
-
               {/* <button
                 className="bg-white  text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
@@ -38,7 +36,10 @@ const Footer = () => {
                 className="bg-white text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="https://www.facebook.com/profile.php?id=61559493152520" target="_blank">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61559493152520"
+                  target="_blank"
+                >
                   <i className="fab fa-facebook-square"></i>
                 </a>
               </button>
@@ -56,12 +57,13 @@ const Footer = () => {
                 className="bg-white text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="https://www.linkedin.com/company/augment-yogi/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/company/augment-yogi/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-linkedin-in"></i>
                 </a>
               </button>
-
-
             </div>
           </div>
 
@@ -83,7 +85,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
-                      href="https://thinkagainlab.com/knowledgehub/"
+                      href="https://blog.augmentyogi.com/"
                       target="_blank"
                     >
                       Blogs
@@ -94,7 +96,7 @@ const Footer = () => {
                       to="/privacypolicy"
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
                     >
-                      Privact Policy
+                      Privacy Policy
                     </Link>
                   </li>
                   <li>
@@ -104,6 +106,16 @@ const Footer = () => {
                     >
                       Terms &amp; Conditions
                     </Link>
+                  </li>
+                  <li>
+                    <a
+                      className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
+                      href="https://calendly.com/augmentyogi/consultation"
+                      target="_blank"
+                    >
+                      Book A Free AR
+                      Consultancy
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -125,25 +137,24 @@ const Footer = () => {
 
                   <li>
                     <a
-                      href="tel:+918240925036"
+                      href="tel:+919800159277"
                       className="text-blueGray-600 hover:text-blueGray-800  block pb-2 text-sm"
                     >
                       {" "}
-                      <i class="fa fa-phone-alt me-3"></i>+91 8240925036
+                      <i class="fa fa-phone-alt me-3"></i>+91 9800159277
                     </a>
                   </li>
 
-                 
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 block pb-2 text-sm"
                       href="mailto:changeyourreality@augmentyogi.com"
                     >
                       {" "}
-                      <i class="fa fa-envelope me-3"></i>changeyourreality@augmentyogi.com
+                      <i class="fa fa-envelope me-3"></i>
+                      changeyourreality@augmentyogi.com
                     </a>
                   </li>
-                  
                 </ul>
               </div>
             </div>

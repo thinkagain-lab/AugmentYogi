@@ -76,6 +76,19 @@ function WhyAR() {
                 </span>
               </li>
             </ul>
+
+            {/* Call to Action Button */}
+            <div className="flex justify-center lg:justify-start mb-5">
+              <a
+                target="_blank"
+                href="https://calendly.com/augmentyogi/consultation"
+                className="block py-2 px-3 text-white rounded"
+              >
+                <span className="relative text-sm md:text-base items-center px-7 py-4 bg-gradient-to-br rounded text-white from-customColor-brand-blue to-customColor-brand-magenta">
+                Book A Free AR Consultancy
+                </span>
+              </a>
+            </div>
           </div>
           <img
             className="w-full mb-4 rounded-lg lg:mb-0 lg:flex"

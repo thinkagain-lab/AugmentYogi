@@ -31,7 +31,7 @@ const SupportedPlatforms = () => {
                 </h3>
               </div>
               <div className="p-10 text-white">
-                <p className="text-center md:text-left">
+                <p className="text-center">
                   AR Filters on Facebook and Instagram are utilised by 600
                   million individuals
                 </p>
@@ -45,7 +45,7 @@ const SupportedPlatforms = () => {
                 </h3>
               </div>
               <div className="p-10 text-white">
-                <p className="text-center md:text-left">
+                <p className="text-center">
                   The global count of mobile AR users exceeds 1.1 billion
                 </p>
               </div>
@@ -58,7 +58,7 @@ const SupportedPlatforms = () => {
                 </h3>
               </div>
               <div className="p-10 text-white">
-                <p className="text-center md:text-left">
+                <p className="text-center ">
                   The estimated AR Market value is expected to reach $50 Billion
                   by 2024
                 </p>
