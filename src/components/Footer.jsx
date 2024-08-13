@@ -37,10 +37,21 @@ const Footer = () => {
                 type="button"
               >
                 <a
+                  href="https://wa.me/9800159277"
+                  target="_blank"
+                >
+                  <i className="fab fa-whatsapp"></i>
+                </a>
+              </button>
+              <button
+                className="bg-white text-customColor-dark-blue shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <a
                   href="https://www.facebook.com/profile.php?id=61559493152520"
                   target="_blank"
                 >
-                  <i className="fab fa-facebook-square"></i>
+                  <i className="fab fa-facebook"></i>
                 </a>
               </button>
 
